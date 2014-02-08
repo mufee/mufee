@@ -697,9 +697,10 @@ class Controller_Artist extends Controller_Template {
             $this->template->content->set_safe('music_info',$music_info->as_array());
         }
         if (Input::method() == 'POST') {
+            $sell = Input::post('sell');
             $musicid=Input::post('musicid');
             $price=Input::post('price');
-            Model_Music::setprice($musicid, $price);
+            Model_Music::setprice($musicid, $price,$sell);
             Response::redirect('artist/');
         }
     }

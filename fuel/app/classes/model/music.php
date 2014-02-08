@@ -45,13 +45,14 @@ class Model_Music extends Model {
 
     public static function insert($title, $savename, $genre, $artistid, $lyrics = "",$price = "") {
 
-        $columns = array('title', 'savename', 'genreid', 'artistid', 'lyrics','price');
+        $columns = array('title', 'savename', 'genreid', 'artistid', 'lyrics','price','sell');
         $values = array('title' => $title,
             'savename' => $savename,
             'genreid' => (int) $genre,
             'artistid' => $artistid,
             'lyrics' => $lyrics,
             'price' => $price,
+            'sell' => "false",
         );
         DB::insert('music')->columns($columns)->values($values)->execute();
     }
@@ -144,9 +145,12 @@ class Model_Music extends Model {
                 ->execute();
         return count($query);
     }
-    public static function setprice($id,$price) {
+    public static function setprice($id,$price,$sell) {
+
+        
         DB::update('music')
-                ->value('price', $price)
+                ->set(array('price' => $price,
+                            'sell'=>$sell))
                 ->where('id', $id)
                 ->execute();
     }

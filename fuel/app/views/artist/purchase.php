@@ -4,7 +4,7 @@
             <div class="col-md-6 col-md-offset-3 mufee-superblock" id="contact">
                 <h1><?php echo $music_info[0]['title'];?></h1>
                 <div class="text-center">
-                <?php if($purchase_check===TRUE):?>
+                <?php if($purchase_check===TRUE || $music_info[0]['price']==='0'):?>
                     <form action="download" method="post">
                     <input type="hidden" name="musicid" value="<?php echo $music_info[0]['id'];?>">
                     <input type="submit" class="btn btn-xlarge btn-mufee-one" value="download">

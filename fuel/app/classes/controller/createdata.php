@@ -452,7 +452,7 @@ SPLIT ZEPP TOUR（全ZEPP5会場）以降、7月半ばから40本以上に及ぶ
         
         
         //music
-        $columns = array('title', 'savename', 'genreid', 'artistid', 'lyrics','price');
+        $columns = array('title', 'savename', 'genreid', 'artistid', 'lyrics','price','sell');
         $values = array(
                 array('title' => "龍ノ子",
                     'savename' => "tm1_1.mp3",
@@ -503,7 +503,8 @@ SPLIT ZEPP TOUR（全ZEPP5会場）以降、7月半ばから40本以上に及ぶ
 何故に生まれたのか　何を償えばいい 
 この血を、この肉を何を成さんとするのか 
 あぁ　全智定め決める者よ、解をこの姿に与えよ",
-                'price'=>'500',),
+                'price'=>'500',
+                'sell'=>'true',),
                 array('title' => "ワンダーガールとラビリンスゲート",
                     'savename' => "tm1_2.mp3",
                     'genreid' => 1000,
@@ -547,7 +548,7 @@ IYAYOIYAYOと可愛いヘンゼル（グレーテル）
 
 火を焚こう（火を焚こう）火を焚こう（火を焚こう）こんがり焼けたらSO DELICIOUS
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "キミノトコロヘ",
                     'savename' => "tm1_3.mp3",
                     'genreid' => 1000,
@@ -606,7 +607,7 @@ I'll be with him holding the memory of my beautiful days in my heart.
 前髪長くてチャラチャラしていて、掃除もしなくて意地悪ばっかり 
 良いとこ探すの難しいけど　だけどもだけどもだけども大好き！だった。 
 こんなにドキドキさせてくれた君の処へ今行くよ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "白雪赤花",
                     'savename' => "tm1_4.mp3",
                     'genreid' => 1000,
@@ -684,7 +685,7 @@ I'll be with him holding the memory of my beautiful days in my heart.
 割れるの 
 貴方の喉に刺さる破片 
 そこに映るは朽ちた枯れ葉",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
                             array('title' => "ジキル",
                     'savename' => "tm1_5.mp3",
                     'genreid' => 1000,
@@ -753,7 +754,7 @@ I'll be with him holding the memory of my beautiful days in my heart.
 
 ジキル博士の夢の戯れ言。
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "Baby Bear",
                     'savename' => "tm2-1.mp3",
                     'genreid' => 1000,
@@ -871,7 +872,7 @@ ah..ah.. I love you
 
 （3.2.1 GOOOOOOOOOOOOOO!!!!!!!!!）
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "自分ということ",
                     'savename' => "tm2_2.mp3",
                     'genreid' => 1000,
@@ -922,7 +923,7 @@ ah..ah.. I love you
 生きるということ 
 何にもできない私に今語りかけている自分ということ
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "僕らはそんなに弱くない",
                     'savename' => "tm2_3.mp3",
                     'genreid' => 1000,
@@ -970,7 +971,7 @@ ah..ah.. I love you
 
 ラララ･･･
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "RAID1",
                     'savename' => "tm2_4.mp3",
                     'genreid' => 1000,
@@ -1037,7 +1038,7 @@ ah..ah.. I love you
 
 “R A I D 1”
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "Not A Wonderful World",
                     'savename' => "tm2_5.mp3",
                     'genreid' => 1000,
@@ -1098,7 +1099,7 @@ So now is the time to make a wonderful world!!
 it's still NOT a wonderful world... 
 Time to make a wonderful world...
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "キーンコーンカーンコーン",
                     'savename' => "tm2_1.mp3",
                     'genreid' => 1000,
@@ -1137,7 +1138,7 @@ Time to make a wonderful world...
 急がなきゃ間に合わない 
 支度して走り出す
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "エンドロール",
                     'savename' => "tm3_2.mp3",
                     'genreid' => 1000,
@@ -1176,7 +1177,7 @@ Time to make a wonderful world...
 淀む輪廻と　本音のその先に　手を伸ばしたら 
 今会いに行くよ
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "MASQUERADER",
                     'savename' => "tm3_1.mp3",
                     'genreid' => 1000,
@@ -1209,7 +1210,7 @@ Time to make a wonderful world...
 いつか砕けた心の墓場　 
 もうすぐに　終わる
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "プラスチックボイス",
                     'savename' => "tm3_3.mp3",
                     'genreid' => 1000,
@@ -1258,7 +1259,7 @@ Time to make a wonderful world...
 ほしいんだよ　また明日も 
 プラスティック　プラスティック　叶えて
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "怪盗Fの台本～消えたダイヤの謎～",
                     'savename' => "tm3_4.mp3",
                     'genreid' => 1000,
@@ -1337,7 +1338,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 さあ、もうカードは揃った　感動の Finale には 
 最前列で全てを見てた君が　導いて？
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "Bring Back Summer",
                     'savename' => "tm3_5.mp3",
                     'genreid' => 1000,
@@ -1379,7 +1380,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 過ぎる季節の流れを感じながら君と過ごした日々を思い出す 
 夏が終わる前に僕が恋い焦がれてたあの空の向こう側へ叫ぶよ
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "ヤキモチの答え-another story-",
                     'savename' => "tm4_2.mp3",
                     'genreid' => 1000,
@@ -1418,7 +1419,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 気になっちゃいますよ
 
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "陽炎デイズ",
                     'savename' => "tm4_1.mp3",
                     'genreid' => 1000,
@@ -1467,7 +1468,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 「またダメだった」 
 執務室のドアの先　猫がこちらを見て笑いました
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "やる気スイッチ",
                     'savename' => "tm4_3.mp3",
                     'genreid' => 1000,
@@ -1513,7 +1514,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 だから離さないよ 
 ずっと愛してるよ
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "闇ノ王",
                     'savename' => "tm4_4.mp3",
                     'genreid' => 1000,
@@ -1620,7 +1621,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 残る牢屋はもぬけの殻 
 嗚呼、霧化できること忘れてたよ
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "夜半ノ月",
                     'savename' => "tm4_5.mp3",
                     'genreid' => 1000,
@@ -1654,7 +1655,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 回り廻（まわ）る　百夜の祈り　幾日（いくにち）想うの恋衣 
 名も無い君と夢路の中へ抱く心に目覚めぬ様に
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "夜光虫",
                     'savename' => "tm1_1.mp3",
                     'genreid' => 1000,
@@ -1687,7 +1688,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 救われずに　満たされずに 
 ただ潰れるよりマシだから
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "骸骨楽団とリリア",
                     'savename' => "tm1_2.mp3",
                     'genreid' => 1000,
@@ -1749,7 +1750,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 途切れない旋律を 
 名もなき君へと
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風のただいま",
                     'savename' => "tm1_3.mp3",
                     'genreid' => 1000,
@@ -1794,7 +1795,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 風になって帰るから… 
 もう少しだけ待っていて…
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風花舞",
                     'savename' => "tm1_4.mp3",
                     'genreid' => 1000,
@@ -1826,7 +1827,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 散りゆく花が今　風に乗る　僕らの想いを重ね 
 降り注ぐ雪と花弁の色　光に溶けゆく
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "革命アルバネーゼ",
                     'savename' => "tm5_2.mp3",
                     'genreid' => 1000,
@@ -1867,7 +1868,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 もう2度とない　革命アルバネーゼ
 
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "鏡音工業社歌",
                     'savename' => "tm5_1.mp3",
                     'genreid' => 1000,
@@ -1897,7 +1898,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 あぁ、みかんとショタレンの　鏡音工業 
 鏡音工業
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "心臓デモクラシー",
                     'savename' => "tm5_3.mp3",
                     'genreid' => 1000,
@@ -1943,7 +1944,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 
 心臓は　一つになる
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "ドーナツホール",
                     'savename' => "tm2_1.mp3",
                     'genreid' => 1000,
@@ -2016,7 +2017,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 目を見開いた　目を見開いた 
 あなたの名前は
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風のただいま",
                     'savename' => "tm1_3.mp3",
                     'genreid' => 2000,
@@ -2061,7 +2062,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 風になって帰るから… 
 もう少しだけ待っていて…
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風花舞",
                     'savename' => "tm1_4.mp3",
                     'genreid' => 2000,
@@ -2093,7 +2094,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 散りゆく花が今　風に乗る　僕らの想いを重ね 
 降り注ぐ雪と花弁の色　光に溶けゆく
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "革命アルバネーゼ",
                     'savename' => "tm5_2.mp3",
                     'genreid' => 2000,
@@ -2134,7 +2135,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 もう2度とない　革命アルバネーゼ
 
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "鏡音工業社歌",
                     'savename' => "tm5_1.mp3",
                     'genreid' => 2000,
@@ -2164,7 +2165,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 あぁ、みかんとショタレンの　鏡音工業 
 鏡音工業
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "心臓デモクラシー",
                     'savename' => "tm5_3.mp3",
                     'genreid' => 2000,
@@ -2210,7 +2211,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 
 心臓は　一つになる
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "ドーナツホール",
                     'savename' => "tm2_1.mp3",
                     'genreid' => 2000,
@@ -2283,7 +2284,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 目を見開いた　目を見開いた 
 あなたの名前は
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風のただいま",
                     'savename' => "tm1_3.mp3",
                     'genreid' => 3000,
@@ -2328,7 +2329,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 風になって帰るから… 
 もう少しだけ待っていて…
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風花舞",
                     'savename' => "tm1_4.mp3",
                     'genreid' => 3000,
@@ -2360,7 +2361,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 散りゆく花が今　風に乗る　僕らの想いを重ね 
 降り注ぐ雪と花弁の色　光に溶けゆく
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "革命アルバネーゼ",
                     'savename' => "tm5_2.mp3",
                     'genreid' => 3000,
@@ -2401,7 +2402,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 もう2度とない　革命アルバネーゼ
 
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "鏡音工業社歌",
                     'savename' => "tm5_1.mp3",
                     'genreid' => 3000,
@@ -2431,7 +2432,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 あぁ、みかんとショタレンの　鏡音工業 
 鏡音工業
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "心臓デモクラシー",
                     'savename' => "tm5_3.mp3",
                     'genreid' => 3000,
@@ -2477,7 +2478,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 
 心臓は　一つになる
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "ドーナツホール",
                     'savename' => "tm2_1.mp3",
                     'genreid' => 3000,
@@ -2550,7 +2551,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 目を見開いた　目を見開いた 
 あなたの名前は
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風のただいま",
                     'savename' => "tm1_3.mp3",
                     'genreid' => 4000,
@@ -2595,7 +2596,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 風になって帰るから… 
 もう少しだけ待っていて…
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風花舞",
                     'savename' => "tm1_4.mp3",
                     'genreid' => 4000,
@@ -2627,7 +2628,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 散りゆく花が今　風に乗る　僕らの想いを重ね 
 降り注ぐ雪と花弁の色　光に溶けゆく
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "革命アルバネーゼ",
                     'savename' => "tm5_2.mp3",
                     'genreid' => 4000,
@@ -2668,7 +2669,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 もう2度とない　革命アルバネーゼ
 
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "鏡音工業社歌",
                     'savename' => "tm5_1.mp3",
                     'genreid' => 4000,
@@ -2698,7 +2699,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 あぁ、みかんとショタレンの　鏡音工業 
 鏡音工業
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "心臓デモクラシー",
                     'savename' => "tm5_3.mp3",
                     'genreid' => 4000,
@@ -2744,7 +2745,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 
 心臓は　一つになる
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "ドーナツホール",
                     'savename' => "tm2_1.mp3",
                     'genreid' => 4000,
@@ -2817,7 +2818,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 目を見開いた　目を見開いた 
 あなたの名前は
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             ///////////////////////////////
             array('title' => "風のただいま",
                     'savename' => "tm1_3.mp3",
@@ -2863,7 +2864,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 風になって帰るから… 
 もう少しだけ待っていて…
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "風花舞",
                     'savename' => "tm1_4.mp3",
                     'genreid' => 5000,
@@ -2895,7 +2896,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 散りゆく花が今　風に乗る　僕らの想いを重ね 
 降り注ぐ雪と花弁の色　光に溶けゆく
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "革命アルバネーゼ",
                     'savename' => "tm5_2.mp3",
                     'genreid' => 5000,
@@ -2936,7 +2937,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 もう2度とない　革命アルバネーゼ
 
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "鏡音工業社歌",
                     'savename' => "tm5_1.mp3",
                     'genreid' => 5000,
@@ -2966,7 +2967,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 あぁ、みかんとショタレンの　鏡音工業 
 鏡音工業
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "心臓デモクラシー",
                     'savename' => "tm5_3.mp3",
                     'genreid' => 5000,
@@ -3012,7 +3013,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 
 心臓は　一つになる
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             array('title' => "ドーナツホール",
                     'savename' => "tm2_1.mp3",
                     'genreid' => 5000,
@@ -3085,7 +3086,7 @@ Bid を 8 で刻んで　ハンマーが踊り出す
 目を見開いた　目を見開いた 
 あなたの名前は
 ",
-                    'price'=>'500',),
+                    'price'=>'500',                'sell'=>'true',),
             
             
             );

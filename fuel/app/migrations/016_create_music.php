@@ -13,7 +13,8 @@ class Create_music
 			'genreid' => array('constraint' => 4, 'type' => 'int'),
 			'artistid' => array('constraint' => 11, 'type' => 'int'),
 			'lyrics' => array('type' => 'text'),
-                        'price' => array('constraint' => 4, 'type' => 'int'),
+                        'price' => array('constraint' => 4, 'type' => 'int' ,'default' => '0'),
+                        'sell' => array('constraint' => "'false','true'", 'type' => 'enum', 'default' => 'false'),
 		), array('id'));
 	}
 
