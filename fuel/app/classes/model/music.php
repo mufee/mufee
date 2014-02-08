@@ -55,7 +55,13 @@ class Model_Music extends Model {
         );
         DB::insert('music')->columns($columns)->values($values)->execute();
     }
-
+//artist単位で音楽を取得
+    public static function getartistallmusic($artistid) {
+        $query = DB::select('*')->from('music')
+                ->where('artistid', $artistid)
+                ->execute();
+        return $query;
+    }
     //artist単位で音楽を取得
     public static function getartistmusic($artistid) {
         $query = DB::select('*')->from('music')
@@ -143,6 +149,14 @@ class Model_Music extends Model {
                 ->value('price', $price)
                 ->where('id', $id)
                 ->execute();
+    }
+    public static function getprice($id)
+    {
+        $query = DB::select('price')->from('music')
+                ->where('id', $id)
+                ->execute();
+        return $query[0]['price'];
+        
     }
 
 }

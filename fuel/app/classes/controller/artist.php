@@ -29,11 +29,15 @@ class Controller_Artist extends Controller_Template {
             'musicupload',
             'thumbnail',
             'thumbnailupload',
+            'priceset',
+            'purchase',
+            'charge',
+            'download',
         );
         
         $auth_group = Auth::get_groups();
         if (in_array($method, $auth_methods) && $auth_group !== "2"){
-            Response::redirect('/');
+           Response::redirect('/');
         }
         
     }
@@ -369,7 +373,6 @@ class Controller_Artist extends Controller_Template {
 
         // cofigを適用
         Upload::process($config);
-
         // 指定された型かチェック
         if (Upload::is_valid()) {
             // アップロード確定
@@ -480,7 +483,7 @@ class Controller_Artist extends Controller_Template {
         $content->set_safe('member', $member->as_array());
         
         //投稿musicを取得
-        $music = Model_Music::getartistmusic($artistid);
+        $music = Model_Music::getartistallmusic($artistid);
         //misic情報を渡す
         $content->set_safe('musicinfo', $music->as_array());
         
@@ -601,9 +604,17 @@ class Controller_Artist extends Controller_Template {
         $this->template->content = View::forge('artist/purchase');
         
         $music_id = Input::get('id');
+        $userid = Auth::get_user_id()[1];
+        
+        $purchase_check=Model_purchase::searchpurchase($userid, $music_id);
         
         $music_info = Model_Music::getmusic($music_id);
+        
+        $this->template->content->set_safe('$music_id',$music_id);
         $this->template->content->set_safe('music_info',$music_info->as_array());
+        $this->template->content->set_safe('purchase_check',$purchase_check);
+        
+        
     }
     public function action_charge() {
 
@@ -614,10 +625,10 @@ class Controller_Artist extends Controller_Template {
         Stripe::setApiKey(SECRET_KEY);
         Stripe::$apiBase = "https://api.webpay.jp";
         // 支払金額。実際には商品番号などを送信し、それに対応する金額をデータベースから引きます
-        $amount = $_POST['amount'];
+        $amount = Model_Music::getprice(Input::post('id'));
         // トークン
-        $token = $_POST['webpay-token'];
-
+        $token = Input::post('webpay-token');
+        
 
         try {
             // 決済を実行
@@ -662,12 +673,16 @@ class Controller_Artist extends Controller_Template {
             exit('Error');
         } catch (Exception $e) {
             // WebPayとは関係ない例外の場合
+            echo '<meta charset="utf-8">';
             print("Unexpected exception\n");
             print('Message is:' . $e->getMessage() . "\n");
             exit('Error');
         }
-
-        // 処理終了後、 https://webpay.jp/test/charges で課金が発生したことが分かります。
+        Model_purchase::insert(Auth::get_user_id()[1], Input::post('id'));
+        $this->template->content->set_safe('result',$result);
+        $this->template->content->set_safe('musicid',Input::post('id'));
+       
+        // 処理終了後、 https://webpay.jp/test/charges で課金が発生したか確認できる。
     }
     public function action_priceset() {
 
@@ -682,13 +697,19 @@ class Controller_Artist extends Controller_Template {
             $this->template->content->set_safe('music_info',$music_info->as_array());
         }
         if (Input::method() == 'POST') {
-            $musicid=Input::post('id');
+            $musicid=Input::post('musicid');
             $price=Input::post('price');
-            
             Model_Music::setprice($musicid, $price);
+            Response::redirect('artist/');
         }
     }
-        
+    public function action_download() 
+    {
+        $music_id=Input::post('musicid');
+        $file=Model_Music::getmusic($music_id);
+        File::download('./uploadmusic/' . $file[0]['savename'], $file[0]['title'].'.mp3');
+    }
+    
     
 }
 ?>
