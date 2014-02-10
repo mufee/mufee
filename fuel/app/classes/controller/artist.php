@@ -149,7 +149,8 @@ class Controller_Artist extends Controller_Template {
         $this->template->breadcrumb = $this->get_bs("view");
         $this->template->content = View::forge('artist/view');
         $this->template->content->set_safe('u_id', Auth::get_user_id());
-
+        
+        
         //artistidを受け取る
         if ((isset($_POST["artistid"]))) {
             // postの場合

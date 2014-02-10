@@ -95,8 +95,10 @@
                                         <tr>
                                             <th>
                                                 <a href="javascript:window.open('lyricsview.php?id=<?php echo $val['id'] ?>','歌詞', 'width=700, height=600, menubar=no, toolbar=no, scrollbars=yes')"><?php echo$val['title'] ?></a>
-                                                <?php if($val['sell']==='true'):?>
-                                                <a href="purchase.php?id=<?php echo $val['id'] ?>"><i class='icon-shopping-cart'></i></a>
+                                                <?php if(Auth::check()):?>
+                                                    <?php if($val['sell']==='true'):?>
+                                                    <a href="purchase.php?id=<?php echo $val['id'] ?>"><i class='icon-shopping-cart'></i></a>
+                                                    <?php endif;?>
                                                 <?php endif;?>
                                             </th>
                                         </tr>
